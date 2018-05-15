@@ -1,0 +1,60 @@
+{
+  "MainNet": {
+    "Name": "MainNet",
+    "ProtocolConfiguration": {
+      "Magic": 34672834,
+      "AddressVersion": 23,
+      "StandbyValidators": [
+        "03085227789e5930f103333a32d01c12040604d40bd9bbbfd9e68ea850a8d9166d",
+        "03127a2edc7bb599130ae8046c730639373165ab06ab7f6b499f06aced889cf2c0",
+        "03043e9fc84faa77b93d286eb43ee10d9ccab1447a13f7e8c611ccae33da3958cb",
+        "033d278072c69b06d44f8191a7ff2cea1dfe0470510290f0da6174ee52c9a2df95"
+      ],
+      "SeedList": [
+        "ec2-18-184-85-210.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-184-87-169.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-194-92-127.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-196-201-133.eu-central-1.compute.amazonaws.com:10333"
+      ],
+      "SystemFee": {
+        "EnrollmentTransaction": 0,
+        "IssueTransaction": 0,
+        "PublishTransaction": 0,
+        "RegisterTransaction": 0
+      }
+    },
+    "ExtraConfiguration": {
+      "lixDB": "https://lix-db-api.herokuapp.com",
+      "lixscan": "https://api.lixscan.io/api/main_net"
+    }
+  },
+  "TestNet": {
+    "Name": "TestNet",
+    "ProtocolConfiguration": {
+      "Magic": 34672834,
+      "AddressVersion": 23,
+      "StandbyValidators": [
+        "03085227789e5930f103333a32d01c12040604d40bd9bbbfd9e68ea850a8d9166d",
+        "03127a2edc7bb599130ae8046c730639373165ab06ab7f6b499f06aced889cf2c0",
+        "03043e9fc84faa77b93d286eb43ee10d9ccab1447a13f7e8c611ccae33da3958cb",
+        "033d278072c69b06d44f8191a7ff2cea1dfe0470510290f0da6174ee52c9a2df95"
+      ],
+      "SeedList": [
+        "ec2-18-184-85-210.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-184-87-169.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-194-92-127.eu-central-1.compute.amazonaws.com:10333",
+        "ec2-18-196-201-133.eu-central-1.compute.amazonaws.com:10333"
+      ],
+      "SystemFee": {
+        "EnrollmentTransaction": 0,
+        "IssueTransaction": 0,
+        "PublishTransaction": 0,
+        "RegisterTransaction": 0
+      }
+    },
+    "ExtraConfiguration": {
+      "lixDB": "https://lix-db-api.herokuapp.com",
+      "lixscan": "https://api.lixscan.io/api/test_net"
+    }
+  }
+}
