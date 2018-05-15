@@ -60,7 +60,7 @@
     "build:prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --mode production",
     "watch:test": "./node_modules/.bin/mocha ./test/unit --bail --watch --reporter=min",
     "rebuild": "rm -rf ./node_modules && npm install && ./node_modules/.bin/webpack",
-    "prepublishOnly": "npm run build:prod"
+    "prepublish": "npm run build:prod"
   },
   "repository": {
     "type": "git",
