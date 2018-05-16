@@ -11,6 +11,7 @@
     "chai": "^4.0.2",
     "chai-as-promised": "^7.1.0",
     "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.5",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.11.0",
@@ -44,8 +45,7 @@
     "scrypt-js": "^2.0.3",
     "secure-random": "^1.1.1",
     "semver": "^5.5.0",
-    "wif": "^2.0.6",
-    "cross-env": "^5.1.5"
+    "wif": "^2.0.6"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test && npm run test:typings",
@@ -60,7 +60,7 @@
     "build:prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --mode production",
     "watch:test": "./node_modules/.bin/mocha ./test/unit --bail --watch --reporter=min",
     "rebuild": "rm -rf ./node_modules && npm install && ./node_modules/.bin/webpack",
-    "postinstall": "npm run build:prod"
+    "prepublishOnly": "npm run build:prod"
   },
   "repository": {
     "type": "git",
